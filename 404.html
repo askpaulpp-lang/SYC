@@ -1,2 +1,2 @@
 <!doctype html><meta charset="utf-8"><title>Scan Your Color</title>
-<script>(function(){var m=location.pathname.match(/^(.*?\/)scan\/([A-Za-z0-9_-]{8,64})\/?$/);location.replace(m?m[1]+'#/scan/'+m[2]:'/SYC/');})();</script>
+<script>(function(){var p=location.pathname,m=p.match(/^(.*?\/)scan\/([A-Za-z0-9_-]{8,64})\/?$/),a=p.match(/^(.*?\/)admin\/?$/);location.replace(m?m[1]+'#/scan/'+m[2]:a?a[1]+'#/admin':'/SYC/');})();</script>
